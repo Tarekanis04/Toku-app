@@ -22,47 +22,45 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        body: Expanded(
-          child: Column(
-            children: [
-              Category(
-                ontap: () {
-                  Navigator.push(context, MaterialPageRoute(builder:(BuildContext context){
-                    return NumbersPage();
-                  }));
-                },
-                color: Color.fromARGB(255, 49, 91, 119),
-                text: 'Numbers',
-              ),
-              Category(
-                ontap: () {
-                  Navigator.push(context, MaterialPageRoute(builder:(BuildContext context){
-                    return FamilyMembers();
-                  }));
-                },
-                color: Color.fromARGB(255, 126, 77, 60),
-                text: 'Fsmily Members',
-              ),
-              Category(
-                ontap: (){
-                  Navigator.push(context, MaterialPageRoute(builder:(BuildContext context){
-                    return ColorsPage();
-                  }));
-                },
-                color: Color.fromARGB(255, 68, 123, 27),
-                text: 'Colors',
-              ),
-              Category(
-                ontap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return PhrasesPage();
-                  },));
-                },
-                color: Color.fromARGB(255, 57, 36, 94),
-                text: 'Phrases',
-              ),
-            ],
-          ),
+        body: Column(
+          children: [
+            Category(
+              ontap: () {
+                Navigator.push(context, MaterialPageRoute(builder:(BuildContext context){
+                  return NumbersPage();
+                }));
+              },
+              color: Color.fromARGB(255, 49, 91, 119),
+              text: 'Numbers',
+            ),
+            Category(
+              ontap: () {
+                Navigator.push(context, MaterialPageRoute(builder:(BuildContext context){
+                  return FamilyMembers();
+                }));
+              },
+              color: Color.fromARGB(255, 126, 77, 60),
+              text: 'Fsmily Members',
+            ),
+            Category(
+              ontap: (){
+                Navigator.push(context, MaterialPageRoute(builder:(BuildContext context){
+                  return ColorsPage();
+                }));
+              },
+              color: Color.fromARGB(255, 68, 123, 27),
+              text: 'Colors',
+            ),
+            Category(
+              ontap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return PhrasesPage();
+                },));
+              },
+              color: Color.fromARGB(255, 57, 36, 94),
+              text: 'Phrases',
+            ),
+          ],
         ),
       );
   }
